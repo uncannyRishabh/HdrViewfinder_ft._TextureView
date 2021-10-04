@@ -1,5 +1,5 @@
 
-Android HdrViewfinder Sample
+[FORK] Android HdrViewfinder Sample
 ===================================
 
 This demo implements a real-time high-dynamic-range camera viewfinder, by alternating
@@ -35,15 +35,13 @@ to the output Allocation. The HDR fusion algorithm is very simple, and tends to 
 lower-contrast scenes, but has very few artifacts and can run very fast.
 
 Data is passed between the subsystems (camera, RenderScript, and display) using the
-Android [android.view.Surface][1] class, which allows for zero-copy transport of large
+Android TextureView class, which allows for zero-copy transport of large
 buffers between processes and subsystems.
-
-[1]: http://developer.android.com/reference/android/view/Surface.html
 
 Pre-requisites
 --------------
 
-- Android SDK 28
+- Android SDK >21
 - Android Build Tools v28.0.3
 - Android Support Repository
 
@@ -57,15 +55,3 @@ Getting Started
 
 This sample uses the Gradle build system. To build this project, use the
 "gradlew build" command or use "Import Project" in Android Studio.
-
-Support
--------
-
-- Google+ Community: https://plus.google.com/communities/105153134372062985968
-- Stack Overflow: http://stackoverflow.com/questions/tagged/android
-
-If you've found an error in this sample, please file an issue:
-https://github.com/android/camera-samples/issues
-
-Patches are encouraged, and may be submitted by forking this project and
-submitting a pull request through GitHub. Please see CONTRIBUTING.md for more details.
